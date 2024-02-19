@@ -23,6 +23,7 @@ class Test_get_triangle(unittest.TestCase):
     def test_negative(self):
         self.assertAlmostEqual(get_triangle_params(a = 0,b = 1,c = 0),(False,None,None))
         self.assertAlmostEqual(get_triangle_params(a = 0,b = 0,c = 0),(False,None,None))
+        self.assertAlmostEqual(get_triangle_params(a = -3,b = -4,c = -5),(False,None,None))#bug negative numbers
 
     def test_class_eq(self):
         self.assertAlmostEqual(get_triangle_params(a = 2,b = 4,c = 5),(True,False,False))
