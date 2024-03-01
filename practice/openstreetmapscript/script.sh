@@ -1,0 +1,1 @@
+curl -v 'https://nominatim.openstreetmap.org/search.php?street=улица+добролюбова+2А&city=Новосибирск&format=jsonv2'

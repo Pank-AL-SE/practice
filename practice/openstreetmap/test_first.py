@@ -1,13 +1,13 @@
 import pytest
 from testing_api import *
 
+import pytest
 @pytest.fixture()
 def test_address(request):
     print("Finding in address")
     def test_address_down():
         print("ending_address")
     request.addfinalizer(test_address_down)
-
     
 def test_addr(test_address):
     """mistake in literals"""
@@ -82,3 +82,8 @@ def test_addr11(test_address):
     a,b = 55.06924, 82.91093
     res = functions.find_street(address = '', city = 'Алтай')
     assert  res == 400
+
+def test_lat_len12(test_address):
+    """invalid Key"""
+    print('test_coords')
+    assert functions.search_in_lat_len(lat='-2525.08051',lon='400.000') == 'invalid Key'

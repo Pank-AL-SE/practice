@@ -27,7 +27,10 @@ class functions():
             if len(res) == 0:
                 return 'no_info'
             else:
-                return res['address']['state']
+                if 'error' in res:
+                    return 'invalid Key'
+                else:
+                    return res['address']['state']
         
     
 
@@ -37,6 +40,6 @@ class functions():
 
 if __name__ == '__main__':
     print(functions.find_street(address='улица дуси ковальчук 258 красный',city='новосибирскк'))
-    print(functions.search_in_lat_len(lat='25.08051',lon='30.30000'))
+    print(functions.search_in_lat_len(lat='25000.08051',lon='30.30000'))
     
     
