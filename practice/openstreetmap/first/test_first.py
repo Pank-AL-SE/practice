@@ -1,5 +1,5 @@
 import pytest
-from testing_api import *
+from practice.openstreetmap.testing_api import *
 
 import pytest
 @pytest.fixture()
@@ -20,12 +20,12 @@ def test_addr(test_address):
 def test_lat_len2(test_address):
     """correct"""
     print('test_coords')
-    assert functions.search_in_lat_len(lat='25.08051',lon='30.30000') == 'الوادي الجديد'
+    assert functions.search_in_lat_lon(lat='25.08051',lon='30.30000') == 'الوادي الجديد'
 
 def test_lat_len3(test_address):
     """double minusies"""
     print('test_coords')
-    assert functions.search_in_lat_len(lat='25.08051',lon='--30.30000') == 400
+    assert functions.search_in_lat_lon(lat='25.08051',lon='--30.30000') == 400
 
 def test_addr4(test_address):
     """mistake крЕсный"""
@@ -36,13 +36,13 @@ def test_addr4(test_address):
 def test_lat_len5(test_address):
     """correct coords"""
     print('test_coords')
-    assert functions.search_in_lat_len(lat='55.06924',lon='82.91093') == 'Новосибирская область'
+    assert functions.search_in_lat_lon(lat='55.06924',lon='82.91093') == 'Новосибирская область'
 
 def test_lat_len6(test_address):
     """with mistake changed . and dot"""
 
     print('test_coords')
-    assert functions.search_in_lat_len(lat='55 dot 06924',lon='82.91093') == 400
+    assert functions.search_in_lat_lon(lat='55 dot 06924',lon='82.91093') == 400
 
 def test_addr7(test_address):
     """whith stickers"""
@@ -86,4 +86,4 @@ def test_addr11(test_address):
 def test_lat_len12(test_address):
     """invalid Key"""
     print('test_coords')
-    assert functions.search_in_lat_len(lat='-2525.08051',lon='400.000') == 'invalid Key'
+    assert functions.search_in_lat_lon(lat='-2525.08051',lon='400.000') == 'invalid Key'

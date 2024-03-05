@@ -17,7 +17,7 @@ class functions():
                 return res
 
 
-    def search_in_lat_len(lat,lon):
+    def search_in_lat_lon(lat,lon):
         url = 'https://nominatim.openstreetmap.org/reverse?lat='+lat+'&lon='+lon+'&format=jsonv2'
         response = requests.get(f"{url}")
         if response.status_code != 200:
