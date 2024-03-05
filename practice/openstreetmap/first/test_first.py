@@ -1,5 +1,5 @@
 import pytest
-from practice.openstreetmap.testing_api import *
+from testing_api import *
 
 import pytest
 @pytest.fixture()
