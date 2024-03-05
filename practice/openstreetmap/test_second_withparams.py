@@ -46,5 +46,4 @@ class TestAPI:
     
     
     
-    #add analizator called yield
-    #keys alur 
+    
