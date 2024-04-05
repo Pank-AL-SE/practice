@@ -1,16 +1,16 @@
 import pytest
 import random
-import pytest_check 
+import pytest_check
 import allure_pytest
 import allure
 from testing_api import *
 from lib_generators import *
 
 @allure.epic("Обратное и прямое тестирование http запросов openstreetmap")
-@allure.story("Тестирование(просто попробовать)")
 class TestAPI: 
+    @allure.story("testing_invalid_coords")
     @pytest.mark.parametrize("lat,lon,res", [(generate_invalid_params(),generate_invalid_params(), 400),#
-                                             (generate_invalid_params(),generate_invalid_params(), 400),#                                         
+                                             (generate_invalid_params(),generate_invalid_params(), 400),#
                                              ('asdas','asdasd', 400),#
                                              ('25.08051','--30.30000', 400),
                                              ('55 dot 06924','82.91093', 400),
@@ -22,13 +22,13 @@ class TestAPI:
         
 
     
-
+    @allure.story("testing_valid_params")
     @pytest.mark.parametrize("lat,lon,res",[('55.06924','82.91093','Новосибирская область'),
                                             ('25.08051','30.30000','الوادي الجديد'),                                            ])
     def test_valid_coords(self, lat,lon,res):
         assert functions.search_in_lat_lon(lat,lon) == res
     
-    
+    @allure.story("testing_strange_params")
     @pytest.mark.parametrize("input_addr,input_city,res",[('Крeсный проСпЕкТ 222/1','НоВоСибирск', 'no_info'),
                                                           ('😂😂😂😂😂😂😂😂😂😂','😂😂😂😂😂😂😂😂😂😂','no_info'),
                                                           ('630001','НоВоСибирск',400),
@@ -38,7 +38,7 @@ class TestAPI:
         pytest_check.equal(functions.find_street(input_addr,input_city), res)
 
 
-
+    @allure.story("testing_strange")
     @pytest.mark.parametrize("input_addr,input_city",[('\u0443\u043b\u0438\u0446\u0430\u0020\u0434\u043e\u0431\u0440\u043e\u043b\u044e\u0431\u043e\u0432\u0430\u0020\u0032\u0430','НоВоСибирск'),
                                                       ('630001','НоВоСибирск'),
                                                       ('','123')])

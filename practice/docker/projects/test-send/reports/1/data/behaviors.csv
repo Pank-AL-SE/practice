@@ -1,0 +1,5 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"Обратное и прямое тестирование http запросов openstreetmap","","testing_invalid_coords","0","0","8","0","0"
+"Обратное и прямое тестирование http запросов openstreetmap","","testing_strange_params","3","0","2","0","0"
+"Обратное и прямое тестирование http запросов openstreetmap","","testing_strange","0","0","3","0","0"
+"Обратное и прямое тестирование http запросов openstreetmap","","testing_valid_params","0","0","2","0","0"

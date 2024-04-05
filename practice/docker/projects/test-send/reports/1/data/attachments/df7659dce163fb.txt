@@ -1,0 +1,212 @@
+RESULTS DIRECTORY PATH: /home/user/practice/practice/docker/test/res
+FILES:
+/home/user/practice/practice/docker/test/res/6cc714d1-8d8c-4d95-9c1f-d329349dcc35-result.json
+/home/user/practice/practice/docker/test/res/a7f20f5b-1d44-4454-a9fa-8fa08126cd04-container.json
+/home/user/practice/practice/docker/test/res/713c72c6-dc63-4345-82da-aa3c2fe22189-result.json
+/home/user/practice/practice/docker/test/res/3ab409df-995d-460a-907f-5fbb2de244cb-result.json
+/home/user/practice/practice/docker/test/res/ce150313-7393-4c4e-858f-e62477b9d820-container.json
+/home/user/practice/practice/docker/test/res/f5691ca9-00be-435d-9530-bf86313e976e-result.json
+/home/user/practice/practice/docker/test/res/6ad131c7-c8aa-4633-8e90-848529b2f895-container.json
+/home/user/practice/practice/docker/test/res/00969d99-5e8a-476e-9781-3dae24b9b1d5-container.json
+/home/user/practice/practice/docker/test/res/de05bdb7-e45f-42b5-9e03-7740485de880-result.json
+/home/user/practice/practice/docker/test/res/bbc70261-331e-4cf9-a49d-b0684ac22b74-container.json
+/home/user/practice/practice/docker/test/res/6f683428-e4eb-4323-89ce-b365fbc3efec-container.json
+/home/user/practice/practice/docker/test/res/dbb1701a-6d23-4663-8e95-0d47e7ded4e1-result.json
+/home/user/practice/practice/docker/test/res/72b1b91e-2567-41c6-b961-ca54e61c77ab-container.json
+/home/user/practice/practice/docker/test/res/d499e7da-baa1-4b42-bbe2-e61fd4e516a2-container.json
+/home/user/practice/practice/docker/test/res/cf1c581e-f5da-4816-9d77-b8ad55767430-result.json
+/home/user/practice/practice/docker/test/res/0c70d649-58e8-4f95-9998-c388ab6e7b40-container.json
+/home/user/practice/practice/docker/test/res/392041ff-886c-4761-be77-6866d7f24f70-result.json
+/home/user/practice/practice/docker/test/res/722ee9e8-8b3a-4694-9f53-8de1539dcc34-container.json
+/home/user/practice/practice/docker/test/res/37dba552-ea88-4cbf-8c6d-e8c12f58c87d-container.json
+/home/user/practice/practice/docker/test/res/92a07734-03d8-4615-81a0-8444657393fa-container.json
+/home/user/practice/practice/docker/test/res/04067af2-5684-4838-893c-9f9553988073-container.json
+/home/user/practice/practice/docker/test/res/0f1f5224-f04f-4f1e-8238-a39648e10cba-attachment.txt
+/home/user/practice/practice/docker/test/res/816b9b0e-8225-4836-9e48-a276e856047f-container.json
+/home/user/practice/practice/docker/test/res/b8936ff6-52c1-4190-b8cc-32d09807b603-container.json
+/home/user/practice/practice/docker/test/res/ae0c3cf2-f820-49c3-b289-dbc82f2dc069-container.json
+/home/user/practice/practice/docker/test/res/99850778-bb8e-4aef-89db-23f0883f01fb-container.json
+/home/user/practice/practice/docker/test/res/821ce31f-b2d8-4b89-9b8e-f3b59e09d258-container.json
+/home/user/practice/practice/docker/test/res/f16e52b5-f369-4e7d-a2ac-23b8ffb486c1-container.json
+/home/user/practice/practice/docker/test/res/6dbe49d8-3d65-4267-b07a-843dd7d5145f-container.json
+/home/user/practice/practice/docker/test/res/5c7a9daf-1217-400f-ba12-3617353279e6-container.json
+/home/user/practice/practice/docker/test/res/06f6311b-764c-4886-95e9-9d20a917040f-result.json
+/home/user/practice/practice/docker/test/res/4f75cd4e-8fd5-4f5b-bcaf-5ee52e30f22e-container.json
+/home/user/practice/practice/docker/test/res/cb16ac1f-f1b9-4b29-a325-a9a88a8c863e-container.json
+/home/user/practice/practice/docker/test/res/7cf2d44b-8c66-4dfb-9103-85478e9d9e98-container.json
+/home/user/practice/practice/docker/test/res/a3980abe-f092-4790-9374-a653ef247362-container.json
+/home/user/practice/practice/docker/test/res/a0c73427-a994-4dce-aa19-c2728ee0d5f7-container.json
+/home/user/practice/practice/docker/test/res/e2a14697-cdee-403c-92b6-e771bfad4809-container.json
+/home/user/practice/practice/docker/test/res/b235a2dc-f248-408f-9ca6-06128be42fdd-container.json
+/home/user/practice/practice/docker/test/res/09af1525-8d87-41d2-bf5a-9c7964a2d9c3-container.json
+/home/user/practice/practice/docker/test/res/7c1621d7-2bd4-4c7d-baa4-7929ffd3700a-container.json
+/home/user/practice/practice/docker/test/res/32551f36-c856-49b9-aabf-778e6f5cc5fe-container.json
+/home/user/practice/practice/docker/test/res/9decce58-ff6d-47d5-af20-1a421fd74251-container.json
+/home/user/practice/practice/docker/test/res/37c67727-e454-4420-ae26-2b00177fe08b-container.json
+/home/user/practice/practice/docker/test/res/9bde7e77-5bb3-456d-9536-6fe5d24cd9ff-container.json
+/home/user/practice/practice/docker/test/res/df864b99-8a90-4fb0-812f-997430d12978-container.json
+/home/user/practice/practice/docker/test/res/cca2a402-795a-4f7b-a47f-4d6d3ca171a2-container.json
+/home/user/practice/practice/docker/test/res/341f638b-c301-4174-bac0-9c364c42cdb0-result.json
+/home/user/practice/practice/docker/test/res/66bc5f15-0ca8-4f17-8ee9-1e65bf50afec-result.json
+/home/user/practice/practice/docker/test/res/e70a522e-599d-4c59-8195-84fc1a2acec3-container.json
+/home/user/practice/practice/docker/test/res/1820b4eb-5a93-4789-b966-6f3e13eb9170-container.json
+/home/user/practice/practice/docker/test/res/3c7c3453-7ce9-4e3e-96cb-aaa556552df4-container.json
+/home/user/practice/practice/docker/test/res/6779f03a-7784-4c2f-906b-6de7bb91fb74-container.json
+/home/user/practice/practice/docker/test/res/afcb2e98-beb8-4d46-be01-d1f7ce75640e-container.json
+/home/user/practice/practice/docker/test/res/d17640e1-ac56-4281-8188-cb11b2ea63fc-container.json
+/home/user/practice/practice/docker/test/res/5f036b87-1559-4025-84db-95783d3e1e4b-container.json
+/home/user/practice/practice/docker/test/res/a5187fb5-c179-485d-aa04-ff7ba00974e2-result.json
+/home/user/practice/practice/docker/test/res/5ee5fd7d-5270-4b19-b20f-197427468e28-result.json
+/home/user/practice/practice/docker/test/res/1081a303-dc55-4fe4-93a4-74b98153cbf9-container.json
+/home/user/practice/practice/docker/test/res/8ba4a164-687a-4151-bedd-32c6a3592548-container.json
+/home/user/practice/practice/docker/test/res/c62daa17-f66d-4873-afb2-9be72484f30a-container.json
+/home/user/practice/practice/docker/test/res/e2a86a1a-acb9-4e80-9b13-de597b92ecf3-result.json
+/home/user/practice/practice/docker/test/res/69bc5a60-02f5-48ae-bc62-133c6e0c36d1-result.json
+/home/user/practice/practice/docker/test/res/150fe0f6-351d-4176-a155-c5c0a5e02822-result.json
+STATUS CODE:
+200
+RESPONSE:
+{
+    "data": {
+        "current_files": [
+            "6cc714d1-8d8c-4d95-9c1f-d329349dcc35-result.json",
+            "a7f20f5b-1d44-4454-a9fa-8fa08126cd04-container.json",
+            "713c72c6-dc63-4345-82da-aa3c2fe22189-result.json",
+            "3ab409df-995d-460a-907f-5fbb2de244cb-result.json",
+            "ce150313-7393-4c4e-858f-e62477b9d820-container.json",
+            "f5691ca9-00be-435d-9530-bf86313e976e-result.json",
+            "6ad131c7-c8aa-4633-8e90-848529b2f895-container.json",
+            "00969d99-5e8a-476e-9781-3dae24b9b1d5-container.json",
+            "de05bdb7-e45f-42b5-9e03-7740485de880-result.json",
+            "bbc70261-331e-4cf9-a49d-b0684ac22b74-container.json",
+            "6f683428-e4eb-4323-89ce-b365fbc3efec-container.json",
+            "dbb1701a-6d23-4663-8e95-0d47e7ded4e1-result.json",
+            "72b1b91e-2567-41c6-b961-ca54e61c77ab-container.json",
+            "d499e7da-baa1-4b42-bbe2-e61fd4e516a2-container.json",
+            "cf1c581e-f5da-4816-9d77-b8ad55767430-result.json",
+            "0c70d649-58e8-4f95-9998-c388ab6e7b40-container.json",
+            "392041ff-886c-4761-be77-6866d7f24f70-result.json",
+            "722ee9e8-8b3a-4694-9f53-8de1539dcc34-container.json",
+            "history",
+            "37dba552-ea88-4cbf-8c6d-e8c12f58c87d-container.json",
+            "92a07734-03d8-4615-81a0-8444657393fa-container.json",
+            "04067af2-5684-4838-893c-9f9553988073-container.json",
+            "0f1f5224-f04f-4f1e-8238-a39648e10cba-attachment.txt",
+            "816b9b0e-8225-4836-9e48-a276e856047f-container.json",
+            "b8936ff6-52c1-4190-b8cc-32d09807b603-container.json",
+            "ae0c3cf2-f820-49c3-b289-dbc82f2dc069-container.json",
+            "99850778-bb8e-4aef-89db-23f0883f01fb-container.json",
+            "821ce31f-b2d8-4b89-9b8e-f3b59e09d258-container.json",
+            "f16e52b5-f369-4e7d-a2ac-23b8ffb486c1-container.json",
+            "6dbe49d8-3d65-4267-b07a-843dd7d5145f-container.json",
+            "5c7a9daf-1217-400f-ba12-3617353279e6-container.json",
+            "06f6311b-764c-4886-95e9-9d20a917040f-result.json",
+            "4f75cd4e-8fd5-4f5b-bcaf-5ee52e30f22e-container.json",
+            "cb16ac1f-f1b9-4b29-a325-a9a88a8c863e-container.json",
+            "7cf2d44b-8c66-4dfb-9103-85478e9d9e98-container.json",
+            "a3980abe-f092-4790-9374-a653ef247362-container.json",
+            "a0c73427-a994-4dce-aa19-c2728ee0d5f7-container.json",
+            "e2a14697-cdee-403c-92b6-e771bfad4809-container.json",
+            "b235a2dc-f248-408f-9ca6-06128be42fdd-container.json",
+            "09af1525-8d87-41d2-bf5a-9c7964a2d9c3-container.json",
+            "7c1621d7-2bd4-4c7d-baa4-7929ffd3700a-container.json",
+            "32551f36-c856-49b9-aabf-778e6f5cc5fe-container.json",
+            "9decce58-ff6d-47d5-af20-1a421fd74251-container.json",
+            "37c67727-e454-4420-ae26-2b00177fe08b-container.json",
+            "executor.json",
+            "9bde7e77-5bb3-456d-9536-6fe5d24cd9ff-container.json",
+            "df864b99-8a90-4fb0-812f-997430d12978-container.json",
+            "cca2a402-795a-4f7b-a47f-4d6d3ca171a2-container.json",
+            "341f638b-c301-4174-bac0-9c364c42cdb0-result.json",
+            "66bc5f15-0ca8-4f17-8ee9-1e65bf50afec-result.json",
+            "e70a522e-599d-4c59-8195-84fc1a2acec3-container.json",
+            "1820b4eb-5a93-4789-b966-6f3e13eb9170-container.json",
+            "3c7c3453-7ce9-4e3e-96cb-aaa556552df4-container.json",
+            "6779f03a-7784-4c2f-906b-6de7bb91fb74-container.json",
+            "afcb2e98-beb8-4d46-be01-d1f7ce75640e-container.json",
+            "d17640e1-ac56-4281-8188-cb11b2ea63fc-container.json",
+            "5f036b87-1559-4025-84db-95783d3e1e4b-container.json",
+            "a5187fb5-c179-485d-aa04-ff7ba00974e2-result.json",
+            "5ee5fd7d-5270-4b19-b20f-197427468e28-result.json",
+            "1081a303-dc55-4fe4-93a4-74b98153cbf9-container.json",
+            "8ba4a164-687a-4151-bedd-32c6a3592548-container.json",
+            "c62daa17-f66d-4873-afb2-9be72484f30a-container.json",
+            "e2a86a1a-acb9-4e80-9b13-de597b92ecf3-result.json",
+            "69bc5a60-02f5-48ae-bc62-133c6e0c36d1-result.json",
+            "150fe0f6-351d-4176-a155-c5c0a5e02822-result.json"
+        ],
+        "current_files_count": 65,
+        "failed_files": [],
+        "failed_files_count": 0,
+        "processed_files": [
+            "6cc714d1-8d8c-4d95-9c1f-d329349dcc35-result.json",
+            "a7f20f5b-1d44-4454-a9fa-8fa08126cd04-container.json",
+            "713c72c6-dc63-4345-82da-aa3c2fe22189-result.json",
+            "3ab409df-995d-460a-907f-5fbb2de244cb-result.json",
+            "ce150313-7393-4c4e-858f-e62477b9d820-container.json",
+            "f5691ca9-00be-435d-9530-bf86313e976e-result.json",
+            "6ad131c7-c8aa-4633-8e90-848529b2f895-container.json",
+            "00969d99-5e8a-476e-9781-3dae24b9b1d5-container.json",
+            "de05bdb7-e45f-42b5-9e03-7740485de880-result.json",
+            "bbc70261-331e-4cf9-a49d-b0684ac22b74-container.json",
+            "6f683428-e4eb-4323-89ce-b365fbc3efec-container.json",
+            "dbb1701a-6d23-4663-8e95-0d47e7ded4e1-result.json",
+            "72b1b91e-2567-41c6-b961-ca54e61c77ab-container.json",
+            "d499e7da-baa1-4b42-bbe2-e61fd4e516a2-container.json",
+            "cf1c581e-f5da-4816-9d77-b8ad55767430-result.json",
+            "0c70d649-58e8-4f95-9998-c388ab6e7b40-container.json",
+            "392041ff-886c-4761-be77-6866d7f24f70-result.json",
+            "722ee9e8-8b3a-4694-9f53-8de1539dcc34-container.json",
+            "37dba552-ea88-4cbf-8c6d-e8c12f58c87d-container.json",
+            "92a07734-03d8-4615-81a0-8444657393fa-container.json",
+            "04067af2-5684-4838-893c-9f9553988073-container.json",
+            "0f1f5224-f04f-4f1e-8238-a39648e10cba-attachment.txt",
+            "816b9b0e-8225-4836-9e48-a276e856047f-container.json",
+            "b8936ff6-52c1-4190-b8cc-32d09807b603-container.json",
+            "ae0c3cf2-f820-49c3-b289-dbc82f2dc069-container.json",
+            "99850778-bb8e-4aef-89db-23f0883f01fb-container.json",
+            "821ce31f-b2d8-4b89-9b8e-f3b59e09d258-container.json",
+            "f16e52b5-f369-4e7d-a2ac-23b8ffb486c1-container.json",
+            "6dbe49d8-3d65-4267-b07a-843dd7d5145f-container.json",
+            "5c7a9daf-1217-400f-ba12-3617353279e6-container.json",
+            "06f6311b-764c-4886-95e9-9d20a917040f-result.json",
+            "4f75cd4e-8fd5-4f5b-bcaf-5ee52e30f22e-container.json",
+            "cb16ac1f-f1b9-4b29-a325-a9a88a8c863e-container.json",
+            "7cf2d44b-8c66-4dfb-9103-85478e9d9e98-container.json",
+            "a3980abe-f092-4790-9374-a653ef247362-container.json",
+            "a0c73427-a994-4dce-aa19-c2728ee0d5f7-container.json",
+            "e2a14697-cdee-403c-92b6-e771bfad4809-container.json",
+            "b235a2dc-f248-408f-9ca6-06128be42fdd-container.json",
+            "09af1525-8d87-41d2-bf5a-9c7964a2d9c3-container.json",
+            "7c1621d7-2bd4-4c7d-baa4-7929ffd3700a-container.json",
+            "32551f36-c856-49b9-aabf-778e6f5cc5fe-container.json",
+            "9decce58-ff6d-47d5-af20-1a421fd74251-container.json",
+            "37c67727-e454-4420-ae26-2b00177fe08b-container.json",
+            "9bde7e77-5bb3-456d-9536-6fe5d24cd9ff-container.json",
+            "df864b99-8a90-4fb0-812f-997430d12978-container.json",
+            "cca2a402-795a-4f7b-a47f-4d6d3ca171a2-container.json",
+            "341f638b-c301-4174-bac0-9c364c42cdb0-result.json",
+            "66bc5f15-0ca8-4f17-8ee9-1e65bf50afec-result.json",
+            "e70a522e-599d-4c59-8195-84fc1a2acec3-container.json",
+            "1820b4eb-5a93-4789-b966-6f3e13eb9170-container.json",
+            "3c7c3453-7ce9-4e3e-96cb-aaa556552df4-container.json",
+            "6779f03a-7784-4c2f-906b-6de7bb91fb74-container.json",
+            "afcb2e98-beb8-4d46-be01-d1f7ce75640e-container.json",
+            "d17640e1-ac56-4281-8188-cb11b2ea63fc-container.json",
+            "5f036b87-1559-4025-84db-95783d3e1e4b-container.json",
+            "a5187fb5-c179-485d-aa04-ff7ba00974e2-result.json",
+            "5ee5fd7d-5270-4b19-b20f-197427468e28-result.json",
+            "1081a303-dc55-4fe4-93a4-74b98153cbf9-container.json",
+            "8ba4a164-687a-4151-bedd-32c6a3592548-container.json",
+            "c62daa17-f66d-4873-afb2-9be72484f30a-container.json",
+            "e2a86a1a-acb9-4e80-9b13-de597b92ecf3-result.json",
+            "69bc5a60-02f5-48ae-bc62-133c6e0c36d1-result.json",
+            "150fe0f6-351d-4176-a155-c5c0a5e02822-result.json"
+        ],
+        "processed_files_count": 63,
+        "sent_files_count": 63
+    },
+    "meta_data": {
+        "message": "Results successfully sent for project_id 'test-send'"
+    }
+}
