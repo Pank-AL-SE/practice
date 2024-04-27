@@ -24,6 +24,20 @@ import random
 import pytest_check
 import allure_pytest
 import allure
-@allure.epic("Testing api localhost:5050")
+import os, requests, json, base64
+from func import *
+
+
+
+
 class Test_API:
-    pass
+   
+    @pytest.fixture
+    def test(self): 
+        with allure.step("testing_invalid_coords"):      
+            assert 0
+
+
+
+    
+    
