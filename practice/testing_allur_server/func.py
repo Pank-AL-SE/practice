@@ -4,9 +4,13 @@ def test_response():
     
     all_projects = '/projects'
     response = requests.get(allure_server + all_projects)
-    return response
+    return str(response)
 
 def search_response():
-    search_projects = '/projects/search?project_id=ad'
+    search_projects = '/projects/search?id=1'
     response = requests.get(allure_server + search_projects)
-    return str(0)
+    return str(response)
+
+
+
+print(create_project())

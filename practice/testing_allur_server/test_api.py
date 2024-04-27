@@ -1,6 +1,6 @@
 """
 first_test_case (valid test)
-1) create new project (POST ../projects) check: (GET ../projects)
+1) search test project (GET ../projects/search
 2) export some allure_testing (POST ../send-results and GET ../generate-report) 
     check: (GET ../projects/{id}/reports/{path}) 
 3) delete our report (GET ../clean-results) check: (GET ../projects/{id}/reports/{path}) 
@@ -29,13 +29,15 @@ from func import *
 
 
 
-
-class Test_API:
-   
-    @pytest.fixture
-    def test(self): 
-        with allure.step("testing_invalid_coords"):      
-            assert 0
+@allure.epic("Обратное и прямое тестирование http запросов openstreetmap")
+class TestAPI: 
+    @allure.story("first_test_case")
+    @pytest.mark.parametrize("func,step,res", [(search_response(),'search_project', '<Response [200]>')
+                                               ])    
+    def test_invalid_coords(self, func,step, res): 
+        with allure.step(step):      
+            pytest_check.equal(func, res)
+        
 
 
 
