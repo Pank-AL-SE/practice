@@ -1,0 +1,10 @@
+RESULTS DIRECTORY PATH: /home/user/practice/practice/testing_allur_server/res
+FILES:
+STATUS CODE:
+400
+RESPONSE:
+{
+    "meta_data": {
+        "message": "'results' array is empty"
+    }
+}

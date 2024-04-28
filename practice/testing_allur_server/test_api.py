@@ -15,10 +15,29 @@ class TestAPI:
                                                (send_test_allure(),'send_test_allure',True),
                                                (clean_history(),'clean_history',True),
                                                (delete_test_project(),'delete_test_project()',True)])    
-    def test_invalid_coords(self, func,step, res): 
+    def test_first_case(self, func,step, res): 
         with allure.step(step):      
             pytest_check.equal(func, res)
+    
+    @allure.story("second_test_case")
+    @pytest.mark.parametrize("func,step,res", [(create_project(),'first_create_project', True),                                               
+                                               (create_project(),'second_create_project',False),
+                                               (delete_test_project(),'first_delete_project',True),
+                                               (delete_test_project(),'second_delete_project',404),
+                                               (send_invalid_data(),'send_invalid_data',True)])    
+    def test_second_case(self, func,step, res): 
+        with allure.step(step):      
+            pytest_check.equal(func, res)
+
         
+    @allure.story("third_test_case")
+    @pytest.mark.parametrize("func,step,res", [(get_version(),'get_version', True),
+                                               (get_swagger(),'get_swagger', True),
+                                               (get_swagger_json(),'get_swagger_json', True),])    
+    def test_third_case(self, func,step, res): 
+        with allure.step(step):      
+            pytest_check.equal(func, res)
+
 
 
 
