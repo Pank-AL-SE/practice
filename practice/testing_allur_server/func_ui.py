@@ -57,11 +57,13 @@ def check_slide_panel():
         return "Not Found"
     slide_pannel = driver.find_elements(By.XPATH, '//div/div/div')
     if 'style="visibility: hidden; transform: translateX(-240px);"' not in slide_pannel[6].get_attribute('outerHTML'):
-        return "Not found slide_pannel"
-        
+        return "Not found slide_pannel"        
     btns = driver.find_elements(By.XPATH, '//div//div//header//div/button')
     time.sleep(5)
-    btns[0].click()
+    try:
+        btns[0].click()
+    except:
+        return "Button not found"
     time.sleep(5)
     print(slide_pannel[0].get_attribute('outerHTML'))
     if 'style="visibility: hidden; transform: translateX(-240px);"' not in slide_pannel[0].get_attribute('outerHTML'):
@@ -116,7 +118,7 @@ def check_window():
     try:
         header2[6].click()
     except:
-        return 'Unknown Button'
+        res = 'Unknown Button'
     return res
 
 
@@ -127,10 +129,16 @@ def check_create_project():
     
     header = driver.find_elements(By.XPATH, '//button')
     time.sleep(5)
-    header[4].click()
+    try:
+        header[4].click()
+    except:
+        return "Button + not found"
     time.sleep(5)
     header1 = driver.find_elements(By.XPATH, '//input')
-    header1[3].send_keys("2")
+    try:
+        header1[3].send_keys("2")
+    except:
+        return "Error with sending keys name of project"
     time.sleep(5)
     header = driver.find_elements(By.XPATH, '//button')
     cnt = 0
@@ -139,8 +147,12 @@ def check_create_project():
     #     if '<span class="MuiButton-label">Create</span><span class="MuiTouchRipple-root"></span>' in header[i].get_attribute('outerHTML'):
     #         cnt+=1
     # print(cnt)
-    header[16].click()
+    try:
+        header[16].click()
+    except:
+        return "Button CREATE not found"
     time.sleep(5)
+    return True
 
 def check_send_file():
     driver = init_project()
@@ -162,11 +174,43 @@ def check_send_file():
     #     if 'Upload Files' in header[i].get_attribute('outerHTML'):
     #         print(i)
     # print(cnt)
-    header[0].click()
+    header = driver.find_elements(By.XPATH, '//input')
+    # for i in range(len(header)):
+    #     print(str(header[i].get_attribute('outerHTML')))
+    #     if 'type="file"' in header[i].get_attribute('outerHTML'):
+    #         print(i)
+    header[2].send_keys("invalid_res/test.txt")
     time.sleep(5)
-    header[0].send_keys("invalid_res/test.txt")
-    time.sleep(5)
+    # header[0].click()
+    # time.sleep(5)
+    # header[0].send_keys("invalid_res/test.txt")
+    # time.sleep(5)
+    
 
+def check_delete_project():
+    driver = init_project()
+    if driver == 404:
+        return "Not Found"
+    header = driver.find_elements(By.XPATH, '//button')
+    # cnt = 0
+    # for i in range(len(header)):
+    #     print(str(header[i].get_attribute('outerHTML')))
+    #     if 'Delete' in header[i].get_attribute('outerHTML'):
+    #         print(i)
+    try:
+        header[15].click()
+    except:
+        return "Button DELETE PROJECT found"
+    time.sleep(15)
+    header = driver.find_elements(By.XPATH, '//button')
+    # cnt = 0
+    # for i in range(len(header)):
+    #     print(str(header[i].get_attribute('outerHTML')))
+    #     if 'Delete' in header[i].get_attribute('outerHTML'):
+    #         print(i)
+    try:
+        header[27].click()
+    except:
+        return "Button DELETE not found"
+    time.sleep(27)
 
-
-print(check_send_file())

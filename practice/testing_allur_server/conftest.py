@@ -3,7 +3,8 @@ import os, requests, json, base64
 
 
 @pytest.fixture(autouse=True,scope='class')
-def test_up(request):    
+def test_up(request):  
+    os.system("bash scripts/create_main.sh")  
     allure_results_directory = '/res'
     allure_server = 'http://localhost:5050'
     current_directory = os.path.dirname(os.path.realpath(__file__))
