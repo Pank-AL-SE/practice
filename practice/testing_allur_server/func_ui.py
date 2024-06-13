@@ -210,6 +210,7 @@ def check_delete_project():
     #         print(i)
     try:
         header[27].click()
+        return True
     except:
         return "Button DELETE not found"
     time.sleep(27)

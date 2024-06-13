@@ -3,5 +3,5 @@ curl -X 'POST' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
   -d '{
-  "id": "testing_allur_server"
+  "id": "testing-allur-server"
 }'

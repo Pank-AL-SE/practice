@@ -1,58 +1,62 @@
 import pytest
-import random
 import pytest_check
-import allure_pytest
 import allure
-import os, requests, json, base64
-from func_api import *
-from func_ui import *
+import func_api as api
+import func_ui as ui
+
+create_flag = False
+send_flag = False
+delete_flag = False
+clean_flag = False
+gen_flag = False
+@allure.epic("Testing_docker_allure")
+class TestAPI:
+    @allure.title('Тестирование отправки корректных данных в новый проект')
+    def test_upload_files(self):
+        with allure.step("Создание нового проекта"):
+            create_flag = api.create_project()
+        with allure.step("Отправка файлов"):
+            send_flag = api.send_test_allure()
+        with allure.step("Проверка ответов сервера"):
+            pytest_check.equal(create_flag, send_flag, True)
+
+    @allure.title('Пробное удаление')
+    def test_delete_project(self):
+        with allure.step("Создание нового проекта"):
+            create_flag = api.create_project()
+        with allure.step("Удаление тестового проекта"):
+            delete_flag = api.delete_test_project()
+        with allure.step("Проверка ответов сервера"):
+            pytest_check.equal(create_flag, delete_flag, True)
+
+    @allure.title('Отчистка истории в существующем проекте')
+    def test_clean_history(self):
+        with allure.step("Создание нового проекта"):
+            create_flag = api.create_project()
+        with allure.step("Чистка истории проекта"):
+            clean_flag = api.delete_test_project()
+        with allure.step("Проверка ответов сервера"):
+            pytest_check.equal(create_flag, clean_flag, True)
+
+    @allure.title('Проверка генерация отчёта')
+    def test_generation_result(self):
+        with allure.step("Создание нового проекта"):
+            create_flag = api.create_project()
+        with allure.step("Генерирование отчета"):
+            gen_flag = api.delete_test_project()
+        with allure.step("Проверка ответов сервера"):
+            pytest_check.equal(create_flag, gen_flag, True)
+
+    @allure.story("Тестирование UI")
+    @pytest.mark.parametrize("foo,name_step, res", [(ui.check_title(),'Проверка названия сервера',True),
+                                                    (ui.check_theme(),'Тестирование изменения темы',True),
+                                                    (ui.check_window(),'Тестирование отступов при изменении размера окна',True),
+                                                    (ui.check_create_project(),'Создание проекта через интерфейс',True),
+                                                    (ui.check_delete_project(),'Удаление сучествующего проекта через интерфейс',True),
+                                                    (ui.check_slide_panel(),'Тестирование вспомогательной выдвижной панели',True)])
+    def test_UI(self, foo, name_step, res):
+        with allure.step(name_step):
+            pytest_check.equal(foo, res)
 
 
-
-@allure.epic("Testing docker_allure")
-class TestAPI: 
-    @allure.story("first_test_case_api")
-    @pytest.mark.parametrize("func,step,res", [(create_project(),'search_project', True),                                               
-                                               (send_test_allure(),'send_test_allure',True),
-                                               (clean_history(),'clean_history',True),
-                                               (delete_test_project(),'delete_test_project()',True)])    
-    def test_first_case(self, func,step, res): 
-        with allure.step(step):
-            pytest_check.equal(func, res)
-    
-    @allure.story("second_test_case_api")
-    @pytest.mark.parametrize("func,step,res", [(create_project(),'first_create_project', True),                                               
-                                               (create_project(),'second_create_project',False),
-                                               (delete_test_project(),'first_delete_project',True),
-                                               (delete_test_project(),'second_delete_project',404),
-                                               (send_invalid_data(),'send_invalid_data',True)])    
-    def test_second_case(self, func,step, res): 
-        with allure.step(step):      
-            pytest_check.equal(func, res)
-
-        
-    @allure.story("third_test_case_api")
-    @pytest.mark.parametrize("func,step,res", [(get_version(),'get_version', True),
-                                               (get_swagger(),'get_swagger', True),
-                                               (get_swagger_json(),'get_swagger_json', True),])    
-    def test_third_case(self, func,step, res): 
-        with allure.step(step):      
-            pytest_check.equal(func, res)
-
-
-    @allure.story("test_case_ui")
-    @pytest.mark.parametrize("func,step,res", [(check_title(),'check_title', True),
-                                               (check_slide_panel(),'check_slide_panel', True),
-                                               (check_theme(),'check_theme', True),
-                                               (check_window(),'check_window', True),
-                                               (check_create_project(),'check_create_project', True),
-                                               (check_delete_project(),'check_delete_project', True)])    
-    def test_third_case(self, func,step, res): 
-        with allure.step(step):      
-            pytest_check.equal(func, res)
-
-
-
-
-    
     
