@@ -13,7 +13,7 @@ def restucturize_response(response):
     elif str(response) == '<Response [200]>':
         return 200
     elif str(response) == '<Response [201]>':
-        return 201
+        return 200
     else:
         return response
 
@@ -121,11 +121,6 @@ def get_swagger_json():
 
 
 
-print(create_project("test"))
-print(search_project("test"))
-print(send_test_allure("test","/test_res"))
-print(gen_our_res("test"))
-print(delete_test_project("test"))
 
 
   
