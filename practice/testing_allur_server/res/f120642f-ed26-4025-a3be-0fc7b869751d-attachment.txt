@@ -1,2 +1,0 @@
-{"data":{"id":"first-test-case"},"meta_data":{"message":"Project successfully created"}}
-{"meta_data":{"message":"project_id: 'first-test-case' successfully removed"}}

@@ -1,9 +1,11 @@
 import pytest
 import os, requests, json, base64
+import random
+
 
 
 @pytest.fixture(autouse=True,scope='class')
-def test_up(request):  
+def upload_json():
     os.system("bash scripts/create_main.sh")  
     allure_results_directory = '/res'
     allure_server = 'http://localhost:5050'
@@ -40,10 +42,9 @@ def test_up(request):
     print(response.status_code)
     json_response_body = json.loads(response.content)
     json_prettier_response_body = json.dumps(json_response_body, indent=4, sort_keys=True)
-    
-    yield
     execution_name = 'execution from my script'
     execution_from = 'http://google.com'
     execution_type = 'teamcity'
-    response = requests.get(allure_server + '/allure-docker-service/generate-report?project_id=' + project_id + '&execution_name=' + execution_name + '&execution_from=' + execution_from + '&execution_type=' + execution_type, headers=headers, verify=ssl_verification)
-    
+    response = requests.get(
+        allure_server + '/allure-docker-service/generate-report?project_id=' + project_id + '&execution_name=' + execution_name + '&execution_from=' + execution_from + '&execution_type=' + execution_type,
+        headers=headers, verify=ssl_verification)
