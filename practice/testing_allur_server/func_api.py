@@ -5,6 +5,7 @@ allure_results_directory = '/res'
 allure_server = 'http://localhost:5050'
 current_directory = os.path.dirname(os.path.realpath(__file__))
 
+
 def restucturize_response(response):
     if str(response) == '<Response [404]>':
         return 404
@@ -13,9 +14,10 @@ def restucturize_response(response):
     elif str(response) == '<Response [200]>':
         return 200
     elif str(response) == '<Response [201]>':
-        return 200
+        return 201
     else:
         return response
+
 
 def create_project(name_prj):
     ssl_verification = True
@@ -30,14 +32,14 @@ def create_project(name_prj):
 
     return restucturize_response(response)
 
+
 def search_project(name_prj):
-    response = requests.get(allure_server + '/allure-docker-service/projects/search?id='
-                             +name_prj)
+    response = requests.get(allure_server + '/allure-docker-service/projects/search?id=' + name_prj)
 
     return restucturize_response(response)
 
         
-def send_test_allure(name_prj,name_dir):
+def send_test_allure(name_prj, name_dir):
     allure_results_directory = name_dir
     allure_server = 'http://localhost:5050'
     current_directory = os.path.dirname(os.path.realpath(__file__))
@@ -73,6 +75,7 @@ def send_test_allure(name_prj,name_dir):
     json_prettier_response_body = json.dumps(json_response_body, indent=4, sort_keys=True)
     return restucturize_response(response)
 
+
 def gen_our_res(name_prj):
     execution_name = 'execution from my script'
     execution_from = 'http://google.com'
@@ -94,20 +97,29 @@ def clean_history(name_prj):
     return restucturize_response(response)
 
 
+def clean_results(name_prj):
+    response = requests.get('http://localhost:5050/allure-docker-service/clean-results?\
+                            project_id='+name_prj)
+    return restucturize_response(response)
+
+
 def delete_test_project(name_prj):
     response = requests.delete('http://localhost:5050/allure-docker-service/projects/' + name_prj)
     return restucturize_response(response)
+
 
 def get_version():
 
     response = requests.get('http://localhost:5050/allure-docker-service/version')
     
     return restucturize_response(response)
+
     
 def get_swagger():
     response = requests.get('http://localhost:5050/allure-docker-service/swagger')
     return restucturize_response(response)
-    
+
+
 def get_swagger_json():
     headres = {
         'accept': '*/*'

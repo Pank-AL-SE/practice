@@ -1,3 +1,0 @@
-{"meta_data":{"message":"project_id 'testing-allur-server' is existent"}}
-STATUS CODE:
-200
