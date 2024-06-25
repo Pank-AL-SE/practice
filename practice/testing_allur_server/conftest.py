@@ -1,52 +1,22 @@
 import pytest
-import os, requests, json, base64
 import random
+import test_lib.func_api as api
+from test_lib import gen_data_prj as generator
 
 
-class VALID:
-    name_prj = ''
-    check_dir = '/test_res'
-    create_flag = False
-    send_flag = False
-    delete_flag = False
-    clean_flag = False
-    gen_flag = False
+@pytest.fixture(scope='function')
+def create_test_project():
+    projects = []
 
-class INVALID:
-    name_prj = ''
-    check_dir = '/invalid_res'
-    create_flag = False
-    send_flag = False
-    delete_flag = False
-    clean_flag = False
-    gen_flag = False
+    def _start(name_prj):
+        api.create_project(name_prj)
+        projects.append(name_prj)
+    yield _start
 
-@pytest.fixture(autouse=True, scope='function')
-def init_valid_data():
-    symbol = 'zxcvbnmasdfghjklqwertyuiop'
-    response = VALID
-    response.name_prj = ''
-    for i in range(6):
-        response.name_prj += random.choice(symbol)
-    return response
+    def _finish(projects):
+        for project in projects:
+            api.delete_test_project(str(project))
 
-
-@pytest.fixture(autouse=True, scope='function')
-def init_invalid_data():
-    symbol = '/*-+?"}:!@#$%'
-    response = INVALID
-    response.name_prj = ''
-    for i in range(6):
-        response.name_prj += random.choice(symbol)
-    return response
-
-@pytest.fixture(autouse=True, scope='function')
-def init_longlong_data():
-    symbol = 'a'
-    response = INVALID
-    response.name_prj = ''
-    for i in range(500):
-        response.name_prj += random.choice(symbol)
-    return response
+    _finish(projects)
 
 
